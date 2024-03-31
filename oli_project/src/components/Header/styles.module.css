@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-blue);
+    box-shadow: rgba(0, 0, 0, 0.40) 3px 3px 3px 0px;
+    max-width: 100%;
+  }
+
+  .links_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-right: 10rem;
+  }
+  
+  .links_list li {
+    margin-right: 1em;
+  }
+  
+  .links_list li a {
+    padding: 0.4em 0.6em;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.3rem;
+    
+  }
+
+  
