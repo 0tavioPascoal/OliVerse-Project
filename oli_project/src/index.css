@@ -8,12 +8,30 @@
   --black: #0000;
   --red: #590902;
   --brown: #F29D52;
+  --footer-background: #1E1E1E;
+  --hr-color: #353535;
+  --text-muted: rgba(255, 255, 255, 0.3);
+  --text-muted-2: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   font-family: 'Nunito Sans', sans-serif;
-  box-sizing: border-box;
   max-width: 100%;
+}
+
+hr {
+  width: 90%;
+  height: 3px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: var(--hr-color);
 }
 

@@ -20,22 +20,22 @@ const Header = () => {
     <ul className={styles.links_list}>
         <li>
             <NavLink to='/'>
-                home
+                Home
             </NavLink>
             <NavLink to='/loja'>
-                loja
+                Loja
             </NavLink>
             <NavLink to='/wiki'>
-                wiki
+                Wiki
             </NavLink>
             <NavLink to='/mapa'>
-                mapa
+                Mapa
             </NavLink>
             <NavLink to='/regras'>
-                regras
+                Regras
             </NavLink>
             <NavLink to='/contact'>
-                Contatos
+                Contato
             </NavLink>
         </li>
     </ul>
