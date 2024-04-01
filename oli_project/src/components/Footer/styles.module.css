@@ -1,6 +1,7 @@
 footer {
     background-color: var(--footer-background);
     color: var(--white);
+    box-shadow: var(--gray) 0px 0px 0px 14px;
     bottom: 0;
 }
 

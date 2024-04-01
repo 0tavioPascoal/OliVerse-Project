@@ -1,11 +1,13 @@
 
 
 :root{
+  --deep-blue: #054E8D;
   --dark-blue: #0468BF;
   --light-blue: #05DBF2;
   --green: #09A603;
   --white: #fff;
   --black: #0000;
+  --gray: #252525;
   --red: #590902;
   --brown: #F29D52;
   --footer-background: #1E1E1E;
