@@ -12,6 +12,8 @@ import Mapa from  './pages/Mapa/Mapa';
 import Regras from  './pages/Regras/Regras';
 import Wiki from  './pages/wiki/Wiki';
 import Home from  './pages/Home/Home';
+import ReportBug from './pages/Reportbug/Reportbug';
+import Conditions from './pages/Conditions/Conditions'
 
 //css
 import './App.css';
@@ -29,6 +31,8 @@ function App() {
           <Route path='/mapa' element={<Mapa/>}/>
           <Route path='/regras' element={<Regras/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/reportbug' element={<ReportBug/>}/>
+          <Route path='/conditions' element={<Conditions/>}/>
         </Routes>
       </div>
       <Footer/>
