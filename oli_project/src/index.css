@@ -12,6 +12,7 @@
   --brown: #F29D52;
   --footer-background: #1E1E1E;
   --hr-color: #353535;
+  --background-color: #181818;
   --text-muted: rgba(255, 255, 255, 0.3);
   --text-muted-2: rgba(255, 255, 255, 0.5);
 }
@@ -26,6 +27,7 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--background-color);
   max-width: 100%;
 }
 
