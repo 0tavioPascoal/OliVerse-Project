@@ -30,10 +30,51 @@
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 600;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .navLinks li a:hover {
-  transition: .3s;
-  transform: scale(1.050);
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.switchContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.switchDefault {
+  display: flex;
+  width: 50px;
+  background-color: var(--text-muted);
+  border-radius: 9999px;
+  justify-content: left;
+  align-items: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 550ms;
+  cursor: pointer;
+}
+
+.switchSelected {
+  background-color: var(--deep-blue);
+  justify-content: right;
+}
+
+.switchBall {
+  margin: 0px 5px;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  text-align: left;
+}
+
+.icon {
+  height: 0px;
+}
+
+.icon img {
+  height: 28px;
+  margin: 0;
 }
