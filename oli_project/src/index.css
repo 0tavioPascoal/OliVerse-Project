@@ -37,3 +37,23 @@ hr {
   border-radius: 20px;
   background-color: var(--hr-color);
 }
+
+.btn {
+  width: 512px;
+  height: 91px;
+  background-color: var(--dark-blue);
+  border-radius: 15px;
+  box-shadow: var(--deep-blue) 0px 4px 0px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3%;
+  transition: .3s;
+}
+
+.btn:hover {
+  transition: .3s;
+  transform: scale(1.075);
+  box-shadow: var(--deep-blue) 0px 4px 0px 10px;
+}

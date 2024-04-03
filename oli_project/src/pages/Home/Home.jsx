@@ -18,7 +18,7 @@ export default function Home() {
                         <img src={Logo} alt='logo' width={'250rem'} />
                     </div>
                     <h1>Explore um mundo fragmentado da sua realidade com diversos desafios, missões e uma super aventura!</h1>
-                    <div className={styles.btn}><a href="#trailer">Conheça o Oli Verse!</a></div>
+                    <div className='btn'><a href="#trailer">Conheça o Oli Verse!</a></div>
                 </div>
             </section>
 
@@ -37,7 +37,7 @@ export default function Home() {
                             <strong>Venha escrever sua própria lenda!</strong>
                         </p>
 
-                        <div className={`${styles.btn} ${styles.btnJogueAgora}`}><a href="">Jogue Agora!</a></div>
+                        <div className={`btn ${styles.btnJogueAgora}`}><a href="">Jogue Agora!</a></div>
                     </div>
                 </div>
             </section>
