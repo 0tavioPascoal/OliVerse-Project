@@ -25,7 +25,7 @@ const Header = () => {
     <nav className={styles.navbar}>
       <div className={styles.navContainer}>
         <NavLink className={styles.logoImage} to='/'>
-          <img src={logo} alt='logo' width={'100rem'} />
+          <img src={logo} alt='logo' width={'80rem'} />
         </NavLink>
 
         <ul className={styles.navLinks}>
