@@ -1,4 +1,4 @@
-.headerSection{
+.headerSection {
     width: 100%;
     height: 120vh;
     background-image: url('../../assets/imgback.png');
@@ -14,7 +14,7 @@
     margin: 4% 0 2% 0;
 }
 
-.headerContainer{
+.headerContainer {
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -23,14 +23,14 @@
     text-align: center;
 }
 
-.headerContainer h1{
+.headerContainer h1 {
     width: 55%;
     height: 100%;
     font-size: 2em;
     font-weight: 400;
 }
 
-.headerContainer a{
+.headerContainer a {
     width: 100%;
     height: 100%;
     font-size: 2em;
@@ -73,21 +73,106 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10% 0 5% 0;
+    margin: 5% 0 0 0;
 }
 
-.trailerVideo video{
+.trailerVideo video {
     border-radius: 20px;
     box-shadow: var(--deep-blue) 27px 25px 0px 0px;
+    transition: .3s;
+}
+
+.trailerVideo video:hover {
+    transition: .3s;
+    box-shadow: var(--deep-blue) 22px 20px 0px 0px;
 }
 
 .trailerDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 85%;
+    width: 90%;
 }
 
 .trailerDescription p {
     color: var(--white);
     font-size: 2em;
-    font-weight: 200;
+    font-weight: 400;
+    margin: 5% 0 0 0;
+}
+
+.trailerDescription a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.btnJogueAgora {
+    height: 120px;
+    margin-bottom: 10%;
+}
+
+.featuresSection {
+    margin-top: 10%;
+}
+
+.featuresContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.featureLeft {
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+.featureRight {
+    text-align: right;
+    margin-bottom: 10%;
+}
+
+.featureLeft,
+.featureRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+}
+
+.featureLeft video,
+.featureRight video {
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: var(--deep-blue) 27px 25px 0px 0px;
+    transition: .3s;
+}
+
+.featureLeft video:hover,
+.featureRight video:hover {
+    box-shadow: var(--deep-blue) 22px 20px 0px 0px;
+    transition: .3s;
+}
+
+.featureDescription {
+    width: 40%;
+    color: var(--white);
+}
+
+.featureDescription h3 {
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.featureDescription p {
+    font-weight: 400;
+    font-size: 1.8em;
 }
