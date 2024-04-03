@@ -7,37 +7,9 @@ import Logo from '../../assets/logoServer.png'
 //videos
 import trailerPrincipal from '../../assets/minecraftTrailer.mp4'
 
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 
 export default function Home() {
-    //Da play no trailer quando chegar em pelo menos 40% da section
-    const [isVideoReady, setIsVideoReady] = useState(false);
-    const videoRef = useRef(null);
-
-    useEffect(() => {
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.4 
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting && isVideoReady) {
-                    videoRef.current.play();
-                } else {
-                    videoRef.current.pause();
-                }
-            });
-        }, options);
-
-        observer.observe(document.getElementById('trailerSection'));
-
-        return () => {
-            observer.disconnect();
-        };
-    }, [isVideoReady]);
-
     return (
         <div className='home'>
             <section className={styles.headerSection} id='headerSection'>
@@ -46,23 +18,68 @@ export default function Home() {
                         <img src={Logo} alt='logo' width={'250rem'} />
                     </div>
                     <h1>Explore um mundo fragmentado da sua realidade com diversos desafios, missões e uma super aventura!</h1>
-                    <div className={styles.btn}><a href="">Conheça o Oli Verse!</a></div>
+                    <div className={styles.btn}><a href="#trailer">Conheça o Oli Verse!</a></div>
                 </div>
             </section>
 
             <section className={styles.trailerSection} id='trailerSection'>
-            <div className={styles.trailerContainer}>
-                    <div className={styles.trailerVideo}>
-                        <video src={trailerPrincipal} onLoadedData={() => setIsVideoReady(true)} ref={videoRef} controls loop>
-                        </video>
+                <div className={styles.trailerContainer}>
+                    <div className={styles.trailerVideo} id='trailer'>
+                        <video src={trailerPrincipal} controls autoPlay loop muted></video>
                     </div>
 
                     <div className={styles.trailerDescription}>
                         <p>
-                           orem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla dui in dignissim commodo.
-                           Sed cursus, neque quis cursus pulvinar, libero metus porttitor augue, ac luctus dolor tellus
-                           sed sem. 
+                            Em nosso servidor de RPG no Minecraft, você embarcará em uma jornada épica repleta de desafios e descobertas. 
+                            Explore terras vastas, participe de missões emocionantes e forje alianças poderosas enquanto enfrenta as forças do mal.
+                            Com classes distintas, sistemas de recompensas, e a promessa de construir seu próprio destino, prepare-se para uma 
+                            experiência única de sobrevivência e aventura onde cada escolha molda o rumo da história. O destino de Oliverse está em suas mãos. 
+                            <strong>Venha escrever sua própria lenda!</strong>
                         </p>
+
+                        <div className={`${styles.btn} ${styles.btnJogueAgora}`}><a href="">Jogue Agora!</a></div>
+                    </div>
+                </div>
+            </section>
+
+            <hr />
+
+            <section className={styles.featuresSection} id='featuresSection'>
+                <div className={styles.featuresContainer}>
+                    <div className={styles.featureLeft}>
+                        <div className={styles.featureDescription}>
+                            <h3>Lorem Impsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam omnis earum placeat, vel perspiciatis pariatur facilis, 
+                                nesciunt odit, minima nisi at deserunt. Rerum maxime optio accusantium soluta veritatis ab.
+                            </p>
+                        </div>
+
+                        <video src={trailerPrincipal} controls autoPlay loop muted></video>
+                    </div>
+
+                    <div className={styles.featureRight}>
+                        <video src={trailerPrincipal} controls autoPlay loop muted></video>
+
+                        <div className={styles.featureDescription}>
+                            <h3>Lorem Impsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam omnis earum placeat, vel perspiciatis pariatur facilis, 
+                                nesciunt odit, minima nisi at deserunt. Rerum maxime optio accusantium soluta veritatis ab.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className={styles.featureLeft}>
+                        <div className={styles.featureDescription}>
+                            <h3>Lorem Impsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam omnis earum placeat, vel perspiciatis pariatur facilis, 
+                                nesciunt odit, minima nisi at deserunt. Rerum maxime optio accusantium soluta veritatis ab.
+                            </p>
+                        </div>
+
+                        <video src={trailerPrincipal} controls autoPlay loop muted></video>
                     </div>
                 </div>
             </section>
