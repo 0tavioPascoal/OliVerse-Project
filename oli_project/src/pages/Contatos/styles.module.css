@@ -1,0 +1,59 @@
+/* .contactWrapper {
+  display: flex;
+  width: 100%;
+} */
+
+.contactContainer {
+  display: flex;
+  margin: 5% 20%;
+}
+
+.contactLeft {
+  margin-right: 150px;
+}
+
+.contactRight {
+  width: 100%;
+}
+
+.form {
+  gap: 1em 1em;
+}
+
+.form input,
+textarea {
+  box-shadow: 0px 2px 0px 5px var(--dark-blue);
+  border-radius: 15px;
+  width: 100%;
+  outline: none;
+  background-color: var(--text-color);
+}
+.form input {
+  padding: 20px 0px;
+}
+
+.form textarea {
+  resize: none;
+  height: 250px;
+}
+.form h2 {
+  color: var(--text-color);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.form button {
+  box-shadow: 0px 2px 0px 5px var(--deep-blue);
+  border-radius: 6px;
+  width: 100%;
+  outline: none;
+  background-color: var(--dark-blue);
+  color: var(--text-color);
+  font-weight: 800;
+  font-size: 32px;
+  padding: 20px 0px;
+}
+
+.formField {
+  margin-bottom: 20px;
+}

@@ -1,20 +1,19 @@
-
-
-:root{
-  --deep-blue: #054E8D;
-  --dark-blue: #0468BF;
-  --light-blue: #05DBF2;
-  --green: #09A603;
+:root {
+  --deep-blue: #054e8d;
+  --dark-blue: #0468bf;
+  --light-blue: #05dbf2;
+  --green: #09a603;
   --white: #fff;
   --black: #0000;
   --gray: #252525;
   --red: #590902;
-  --brown: #F29D52;
-  --footer-background: #1E1E1E;
+  --brown: #f29d52;
+  --footer-background: #1e1e1e;
   --background-color: #181818;
   --hr-color: #353535;
   --text-muted: rgba(255, 255, 255, 0.3);
   --text-muted-2: rgba(255, 255, 255, 0.5);
+  --text-color: #e7e7e7;
 }
 
 * {
@@ -38,4 +37,3 @@ hr {
   border-radius: 20px;
   background-color: var(--hr-color);
 }
-
