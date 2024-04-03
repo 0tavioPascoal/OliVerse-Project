@@ -27,7 +27,7 @@
     width: 55%;
     height: 100%;
     font-size: 2em;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .headerContainer a {
@@ -148,18 +148,29 @@
     padding: 0 5% 0 5%;
 }
 
+.featureLeft video{
+    box-shadow: var(--deep-blue) 27px 25px 0px 0px;
+}
+
+.featureRight video{
+    box-shadow: var(--deep-blue) -27px 25px 0px 0px;
+}
+
 .featureLeft video,
 .featureRight video {
     width: 50%;
     border-radius: 20px;
-    box-shadow: var(--deep-blue) 27px 25px 0px 0px;
     transition: .3s;
 }
 
-.featureLeft video:hover,
-.featureRight video:hover {
-    box-shadow: var(--deep-blue) 22px 20px 0px 0px;
+.featureLeft video:hover{
     transition: .3s;
+    box-shadow: var(--deep-blue) 22px 20px 0px 0px;
+}
+
+.featureRight video:hover{
+    transition: .3s;
+    box-shadow: var(--deep-blue) -22px 20px 0px 0px;
 }
 
 .featureDescription {
