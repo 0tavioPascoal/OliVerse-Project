@@ -5,53 +5,56 @@
 
 .contactContainer {
   display: flex;
-  margin: 5% 20%;
-}
-
-.contactLeft {
-  margin-right: 150px;
-}
-
-.contactRight {
-  width: 100%;
-}
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0 5% 0;
+  gap: 20%;
+ }
 
 .form {
-  gap: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
 }
 
 .form input,
 textarea {
   box-shadow: 0px 2px 0px 5px var(--dark-blue);
   border-radius: 15px;
-  width: 100%;
+  width: 40vw;
   outline: none;
   background-color: var(--text-color);
+  font-size: 2em;
 }
 .form input {
-  padding: 20px 0px;
+  padding: 15px 10px;
 }
 
 .form textarea {
   resize: none;
-  height: 250px;
+  height: 30vh;
+  padding: 15px 10px;
 }
 .form h2 {
   color: var(--text-color);
-  font-weight: 400;
-  margin-bottom: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.form button {
-  box-shadow: 0px 2px 0px 5px var(--deep-blue);
-  border-radius: 6px;
+.btnEnviar {
+  width: 40vw;
+}
+
+.btnEnviar a {
   width: 100%;
-  outline: none;
-  background-color: var(--dark-blue);
-  color: var(--text-color);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
   font-weight: 800;
-  font-size: 32px;
-  padding: 20px 0px;
 }
 
 .formField {
