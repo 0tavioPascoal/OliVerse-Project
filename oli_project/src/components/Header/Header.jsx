@@ -7,7 +7,10 @@ import logo from '../../assets/logoServer.png';
 //css
 import styles from './styles.module.css';
 
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+import { FaArrowUp } from 'react-icons/fa';
+
 
 import darkIcon from '../../assets/dark-theme-icon.svg';
 import lightIcon from '../../assets/light-theme-icon.svg';
@@ -16,10 +19,35 @@ import classnames from 'classnames';
 
 const Header = () => {
   const [checked, setChecked] = useState(false);
+  const [showScrollButton, setShowScrollButton] = useState(false); // Estado para controlar a visibilidade do botão
 
   const toggleChecked = () => {
     setChecked((prev) => !prev);
   };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
   return (
     <nav className={styles.navbar}>
@@ -40,6 +68,11 @@ const Header = () => {
           </li>
         </ul>
       </div>
+
+      { }
+      <button className={`${styles.scrollToTopButton} ${showScrollButton ? '' : styles.fadeOut}`} onClick={scrollToTop}>
+        <FaArrowUp />
+      </button>
     </nav>
   );
 };
