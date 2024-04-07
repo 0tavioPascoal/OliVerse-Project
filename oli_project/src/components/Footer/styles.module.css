@@ -84,3 +84,10 @@ a {
     padding: 0.5% 0 0.5% 0;
     color: var(--text-muted);
 }
+
+@media only screen and (max-width: 1025px) {
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
