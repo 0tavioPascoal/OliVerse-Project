@@ -57,3 +57,15 @@ hr {
   transform: scale(1.075);
   box-shadow: var(--deep-blue) 0px 4px 0px 10px;
 }
+
+@media only screen and (max-width: 690px) {
+  body {
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .btn {
+    width: 80vw;
+  }
+}
