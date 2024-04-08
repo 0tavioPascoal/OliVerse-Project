@@ -1,21 +1,18 @@
 //imports
 import { NavLink } from 'react-router-dom';
-
-//logo
-import logo from '../../assets/logoServer.png';
+import { useState, useEffect } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
+import classnames from 'classnames';
 
 //css
 import styles from './styles.module.css';
 
-import { useState, useEffect } from 'react';
-
-import { FaArrowUp } from 'react-icons/fa';
-
-
+//icons
+import logo from '../../assets/logoServer.png';
 import darkIcon from '../../assets/dark-theme-icon.svg';
 import lightIcon from '../../assets/light-theme-icon.svg';
-
-import classnames from 'classnames';
+import menuMobileHamburguer from '../../assets/menu-burger.png';
+import menuMobileClose from '../../assets/cross.png';
 
 const Header = () => {
   const [checked, setChecked] = useState(false);
@@ -50,30 +47,51 @@ const Header = () => {
 
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.navContainer}>
-        <NavLink className={styles.logoImage} to='/'>
-          <img src={logo} alt='logo' width={'80rem'} />
-        </NavLink>
+    <div>
+      <nav className={styles.navbar}>
+        <div className={styles.navContainer}>
+          <NavLink className={styles.logoImage} to='/'>
+            <img src={logo} alt='logo' width={'80rem'} />
+          </NavLink>
 
-        <ul className={styles.navLinks}>
-          <li>
-            <NavLink to='/'>Home</NavLink>
-            <NavLink to='/loja'>Loja</NavLink>
-            <NavLink to='/wiki'>Wiki</NavLink>
-            <NavLink to='/mapa'>Mapa</NavLink>
-            <NavLink to='/regras'>Regras</NavLink>
-            <NavLink to='/contact'>Contato</NavLink>
-            <Switch />
-          </li>
-        </ul>
-      </div>
+          <ul className={styles.navLinks}>
+            <li>
+              <NavLink to='/'>Home</NavLink>
+              <NavLink to='/loja'>Loja</NavLink>
+              <NavLink to='/wiki'>Wiki</NavLink>
+              <NavLink to='/mapa'>Mapa</NavLink>
+              <NavLink to='/regras'>Regras</NavLink>
+              <NavLink to='/contact'>Contato</NavLink>
+              <Switch />
+            </li>
+          </ul>
+          <div className={styles.menuMobileIcon} >
+            <img src={menuMobileHamburguer} />
+          </div>
+        </div>
+        { }
+        <button className={`${styles.scrollToTopButton} ${showScrollButton ? '' : styles.fadeOut}`} onClick={scrollToTop}>
+          <FaArrowUp />
+        </button>
+      </nav>
 
-      { }
-      <button className={`${styles.scrollToTopButton} ${showScrollButton ? '' : styles.fadeOut}`} onClick={scrollToTop}>
-        <FaArrowUp />
-      </button>
-    </nav>
+      <nav className={styles.navMobile}>
+          <div className={styles.navMobileContainer}>
+            <div className={styles.mobilelinks}>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/loja'>Loja</NavLink>
+                <NavLink to='/wiki'>Wiki</NavLink>
+                <NavLink to='/mapa'>Mapa</NavLink>
+                <NavLink to='/regras'>Regras</NavLink>
+                <NavLink to='/contact'>Contato</NavLink>
+                <Switch />
+            </div>
+            <div className={styles.btnClose}>
+              <img src={menuMobileClose}/>
+            </div>
+          </div>
+      </nav>
+    </div>
   );
 };
 

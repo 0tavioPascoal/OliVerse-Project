@@ -9,7 +9,7 @@
   align-items: center;
   padding: 5% 0 0 0;
   gap: 20%;
- }
+}
 
 .form {
   display: flex;
@@ -28,6 +28,7 @@ textarea {
   background-color: var(--text-color);
   font-size: 2em;
 }
+
 .form input {
   padding: 15px 10px;
 }
@@ -37,6 +38,7 @@ textarea {
   height: 30vh;
   padding: 15px 10px;
 }
+
 .form h2 {
   color: var(--text-color);
   font-weight: 600;
@@ -59,4 +61,16 @@ textarea {
 
 .formField {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .btnEnviar,
+  .form input,
+  textarea {
+    width: 70vw;
+  }
+
+  .contactLeft {
+    display: none;
+  }
 }

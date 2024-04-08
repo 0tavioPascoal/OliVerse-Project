@@ -11,7 +11,7 @@
 }
 
 .logoContainer {
-    margin: 4% 0 2% 0;
+    margin: 10% 0 2% 0;
 }
 
 .headerContainer {
@@ -123,6 +123,14 @@
     margin-top: 10%;
 }
 
+.featuresSectionMoblie {
+    display: none;
+}
+
+#featuresSectionMoblie {
+    display: none;
+}
+
 .featuresContainer {
     display: flex;
     flex-direction: column;
@@ -187,3 +195,114 @@
     font-weight: 400;
     font-size: 1.8em;
 }
+
+@media only screen and (max-width: 1100px) {
+    .featuresSection {
+        display: none;
+    }
+    
+    #featuresSection{
+        display: none;
+    }
+    
+    .featuresSectionMoblie {
+        display: flex;
+        margin-top: 10%;
+    }
+    
+    #featuresSectionMoblie {
+        display: flex;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 1101px) {
+    .featuresSectionMoblie {
+        display: none;
+    }
+    
+    #featuresSectionMoblie {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .headerContainer h1 {
+        width: 90%;
+        font-size: 2em;
+        margin-bottom: 5%;
+    }
+
+    .logoContainer {
+        margin-top: 20%;
+    }
+
+    .logoContainer img {
+        width: 40%;
+    }
+
+    .trailerVideo {
+        margin-bottom: 10%;
+    }
+
+    .trailerDescription p{
+        width: 90%;
+        font-size: 1.8em;
+        margin-bottom: 10%;
+    }
+
+    .featuresContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .featureLeft {
+        display: flex;
+        flex-direction: column;
+        
+    } 
+
+    .featureDescription {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .featuresContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featureLeft video {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 1285px) {
+    .trailerVideo video{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .trailerVideo video {
+        box-shadow: var(--deep-blue) 12px 18px 0px 0px;
+    }
+
+    .trailerVideo video:hover {
+        box-shadow: var(--deep-blue) 10px 8px 0px 0px;
+    }
+
+    .featureLeft video{
+        box-shadow: var(--deep-blue) 12px 18px 0px 0px;
+    }
+
+    .featureLeft video:hover{
+        box-shadow: var(--deep-blue) 10px 8px 0px 0px;
+    }
+}
+

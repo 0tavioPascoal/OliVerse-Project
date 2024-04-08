@@ -6,7 +6,6 @@ import steveSvg from '../../assets/steve.svg';
 
 export default function Contact() {
   return (
-    // <div className={styles.contactWrapper}>
     <div className={styles.contactContainer}>
       <div className={styles.contactLeft}>
         <img src={steveSvg} />
@@ -26,12 +25,11 @@ export default function Contact() {
               <h2>Mensagem</h2>
               <textarea placeholder='' />
             </div>
+            
             <div className={`btn ${styles.btnEnviar}`}><a href="">Enviar</a></div>
           </form>
         </div>
       </div>
-
     </div>
-    // </div>
   );
 }

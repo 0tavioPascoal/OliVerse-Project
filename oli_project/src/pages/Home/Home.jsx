@@ -83,6 +83,46 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            <section className={styles.featuresSectionMoblie} id='featuresSectionMobile'>
+                <div className={styles.featuresContainer}>
+                    <div className={styles.featureLeft}>
+                        <div className={styles.featureDescription}>
+                            <h3>Lorem Impsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam omnis earum placeat, vel perspiciatis pariatur facilis, 
+                                nesciunt odit, minima nisi at deserunt. Rerum maxime optio accusantium soluta veritatis ab.
+                            </p>
+                        </div>
+
+                        <video src={trailerPrincipal} controls autoPlay loop muted></video>
+                    </div>
+
+                    <div className={styles.featureLeft}>
+                        <div className={styles.featureDescription}>
+                            <h3>Lorem Impsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam omnis earum placeat, vel perspiciatis pariatur facilis, 
+                                nesciunt odit, minima nisi at deserunt. Rerum maxime optio accusantium soluta veritatis ab.
+                            </p>
+                        </div>
+
+                        <video src={trailerPrincipal} controls autoPlay loop muted></video>
+                    </div>
+
+                    <div className={styles.featureLeft}>
+                        <div className={styles.featureDescription}>
+                            <h3>Lorem Impsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam omnis earum placeat, vel perspiciatis pariatur facilis, 
+                                nesciunt odit, minima nisi at deserunt. Rerum maxime optio accusantium soluta veritatis ab.
+                            </p>
+                        </div>
+
+                        <video src={trailerPrincipal} controls autoPlay loop muted></video>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
