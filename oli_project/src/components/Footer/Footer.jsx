@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 //icons
 import logoFooter from '../../assets/footer-logo.png'
@@ -37,9 +38,9 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.linksContainer}>
-                    <a href="">Contato</a>
-                    <a href="">Reportar Bug</a>
-                    <a href="">Termos e Condições</a>
+                    <NavLink to='/contact'>Contato</NavLink>
+                    <NavLink to='/conditions'>Termos e Condições</NavLink>
+                    <NavLink to='/reportbug'>Rerportar Bugs</NavLink>
                 </div>
             </div>
 

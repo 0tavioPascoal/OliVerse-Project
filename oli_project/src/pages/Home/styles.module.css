@@ -1,7 +1,308 @@
-.container{
-    /*background-image: url('../../assets/imgback.png') ;
-    background-position: center;
+.headerSection {
+    width: 100%;
+    height: 120vh;
+    background-image: url('../../assets/imgback.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    width: '100vw';
-    height: '100vh'; */
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
+
+.logoContainer {
+    margin: 10% 0 2% 0;
+}
+
+.headerContainer {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headerContainer h1 {
+    width: 55%;
+    height: 100%;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.headerContainer a {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    width: 512px;
+    height: 91px;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+    box-shadow: var(--deep-blue) 0px 4px 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+    transition: .3s;
+}
+
+.btn:hover {
+    transition: .3s;
+    transform: scale(1.075);
+    box-shadow: var(--deep-blue) 0px 4px 0px 10px;
+}
+
+.trailerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailerVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0 0 0;
+}
+
+.trailerVideo video {
+    border-radius: 20px;
+    box-shadow: var(--deep-blue) 27px 25px 0px 0px;
+    transition: .3s;
+}
+
+.trailerVideo video:hover {
+    transition: .3s;
+    box-shadow: var(--deep-blue) 22px 20px 0px 0px;
+}
+
+.trailerDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+
+.trailerDescription p {
+    color: var(--white);
+    font-size: 2em;
+    font-weight: 400;
+    margin: 5% 0 0 0;
+}
+
+.trailerDescription a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.btnJogueAgora {
+    height: 120px;
+    margin-bottom: 10%;
+}
+
+.featuresSection {
+    margin-top: 10%;
+}
+
+.featuresSectionMoblie {
+    display: none;
+}
+
+#featuresSectionMoblie {
+    display: none;
+}
+
+.featuresContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.featureLeft {
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+.featureRight {
+    text-align: right;
+    margin-bottom: 10%;
+}
+
+.featureLeft,
+.featureRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+}
+
+.featureLeft video{
+    box-shadow: var(--deep-blue) 27px 25px 0px 0px;
+}
+
+.featureRight video{
+    box-shadow: var(--deep-blue) -27px 25px 0px 0px;
+}
+
+.featureLeft video,
+.featureRight video {
+    width: 50%;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.featureLeft video:hover{
+    transition: .3s;
+    box-shadow: var(--deep-blue) 22px 20px 0px 0px;
+}
+
+.featureRight video:hover{
+    transition: .3s;
+    box-shadow: var(--deep-blue) -22px 20px 0px 0px;
+}
+
+.featureDescription {
+    width: 40%;
+    color: var(--white);
+}
+
+.featureDescription h3 {
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.featureDescription p {
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+@media only screen and (max-width: 1100px) {
+    .featuresSection {
+        display: none;
+    }
+    
+    #featuresSection{
+        display: none;
+    }
+    
+    .featuresSectionMoblie {
+        display: flex;
+        margin-top: 10%;
+    }
+    
+    #featuresSectionMoblie {
+        display: flex;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 1101px) {
+    .featuresSectionMoblie {
+        display: none;
+    }
+    
+    #featuresSectionMoblie {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .headerContainer h1 {
+        width: 90%;
+        font-size: 2em;
+        margin-bottom: 5%;
+    }
+
+    .logoContainer {
+        margin-top: 20%;
+    }
+
+    .logoContainer img {
+        width: 40%;
+    }
+
+    .trailerVideo {
+        margin-bottom: 10%;
+    }
+
+    .trailerDescription p{
+        width: 90%;
+        font-size: 1.8em;
+        margin-bottom: 10%;
+    }
+
+    .featuresContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .featureLeft {
+        display: flex;
+        flex-direction: column;
+        
+    } 
+
+    .featureDescription {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .featuresContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featureLeft video {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 1285px) {
+    .trailerVideo video{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .trailerVideo video {
+        box-shadow: var(--deep-blue) 12px 18px 0px 0px;
+    }
+
+    .trailerVideo video:hover {
+        box-shadow: var(--deep-blue) 10px 8px 0px 0px;
+    }
+
+    .featureLeft video{
+        box-shadow: var(--deep-blue) 12px 18px 0px 0px;
+    }
+
+    .featureLeft video:hover{
+        box-shadow: var(--deep-blue) 10px 8px 0px 0px;
+    }
+}
+
